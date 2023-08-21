@@ -11,8 +11,8 @@ import Credits from '@/components/Credits';
 export default function Table() {
     return (
         <Box rows={'2'} columns={'1'} gap={'9'} style={{ zoom: '65%', overflow: 'visible' }}>
-                <Box rows={'7'} columns={'1'} gap={'1'}>
-                    <Flex gap={'1'} id={'period-1'} style={{ width: '100%' }}>
+                <Box rows={'7'} columns={'1'} gap={'1'} style={{ width: '100%' }}>
+                    <Flex gap={'1'} id={'period-1'}>
                         <Element element_image={images[0]} props={elements[0]} />
                         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map((i) => (<ElementHolder key={i} />))}
                         <Element element_image={images[1]} props={elements[1]} />
