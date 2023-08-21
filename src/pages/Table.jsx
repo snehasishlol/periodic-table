@@ -1,4 +1,4 @@
-import { Flex, Box, ScrollArea } from '@radix-ui/themes';
+import { Flex, Box } from '@radix-ui/themes';
 import elements from '@/data/elements/elements';
 import images from '@/data/images/images';
 import React from 'react';
@@ -10,7 +10,7 @@ import Credits from '@/components/Credits';
 
 export default function Table() {
     return (
-        <Box rows={'2'} columns={'1'} gap={'9'} style={{ zoom: '65%', overflow: 'scroll' }}>
+        <Box rows={'2'} columns={'1'} gap={'9'} style={{ zoom: '65%', overflow: 'visible' }}>
                 <Box rows={'7'} columns={'1'} gap={'1'}>
                     <Flex gap={'1'} id={'period-1'} style={{ width: '100%' }}>
                         <Element element_image={images[0]} props={elements[0]} />
