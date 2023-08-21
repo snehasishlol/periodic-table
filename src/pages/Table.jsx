@@ -14,7 +14,7 @@ export default function Table() {
                 <Box rows={'7'} columns={'1'} gap={'1'}>
                     <Flex gap={'1'} id={'period-1'} style={{ width: '100%' }}>
                         <Element element_image={images[0]} props={elements[0]} />
-                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map((i) => (<ElementHolder />))}
+                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map((i) => (<ElementHolder key={i} />))}
                         <Element element_image={images[1]} props={elements[1]} />
                     </Flex>
 
@@ -24,7 +24,7 @@ export default function Table() {
                         <ElementHolder />
                         <ElementHolder x={<ElementIndex />} />
                         <ElementHolder x={<Credits />} />
-                        {[1, 2, 3, 4, 5, 6, 7].map((i) => (<ElementHolder />))}
+                        {[1, 2, 3, 4, 5, 6, 7].map((i) => (<ElementHolderm key={i} />))}
                         <Element element_image={images[4]} props={elements[4]} />
                         <Element element_image={images[5]} props={elements[5]} />
                         <Element element_image={images[6]} props={elements[6]} />
@@ -36,7 +36,7 @@ export default function Table() {
                     <Flex gap={'1'} id={'period-3'}>
                         <Element element_image={images[10]} props={elements[10]} />
                         <Element element_image={images[11]} props={elements[11]} />
-                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (<ElementHolder />))}
+                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (<ElementHolder key={i} />))}
                         <Element element_image={images[12]} props={elements[12]} />
                         <Element element_image={images[13]} props={elements[13]} />
                         <Element element_image={images[14]} props={elements[14]} />
@@ -52,7 +52,7 @@ export default function Table() {
                                     {
                                         el.period === '4' ?
                                             <>
-                                                <Element props={el} element_image={images[el.atomic_number-1]} />
+                                                <Element props={el} element_image={images[el.atomic_number-1]} key={el.atomic_number} />
                                             </>
                                             : null
                                     }
@@ -68,7 +68,7 @@ export default function Table() {
                                     {
                                         el.period === '5' ?
                                             <>
-                                                <Element props={el} element_image={images[el.atomic_number-1]} />
+                                                <Element props={el} element_image={images[el.atomic_number-1]} key={el.atomic_number} />
                                             </>
                                             : null
                                     }
@@ -90,7 +90,7 @@ export default function Table() {
                                                 {
                                                     el.atomic_number > 71 ?
                                                         <>
-                                                            <Element props={el} element_image={images[el.atomic_number-1]} />
+                                                            <Element props={el} element_image={images[el.atomic_number-1]} key={el.atomic_number} />
                                                         </>
                                                         : null
                                                 }
@@ -115,7 +115,7 @@ export default function Table() {
                                                 {
                                                     el.atomic_number > 103 ?
                                                         <>
-                                                            <Element props={el} element_image={images[el.atomic_number-1]} />
+                                                            <Element props={el} element_image={images[el.atomic_number-1]} key={el.atomic_number} />
                                                         </>
                                                         : null
                                                 }
@@ -143,7 +143,7 @@ export default function Table() {
                                                 {
                                                     el.atomic_number > 56 && el.atomic_number < 72 ?
                                                         <>
-                                                            <Element props={el} element_image={images[el.atomic_number-1]} />
+                                                            <Element props={el} element_image={images[el.atomic_number-1]} key={el.atomic_number} />
                                                         </>
                                                         : null
                                                 }
@@ -168,7 +168,7 @@ export default function Table() {
                                                 {
                                                     el.atomic_number > 88 && el.atomic_number < 104 ?
                                                         <>
-                                                            <Element props={el} element_image={images[el.atomic_number-1]} />
+                                                            <Element props={el} element_image={images[el.atomic_number-1]} key={el.atomic_number} />
                                                         </>
                                                         : null
                                                 }
