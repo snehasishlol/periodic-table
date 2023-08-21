@@ -7,10 +7,11 @@ import ElementHolder from '@/components/ElementHolder';
 import ElementOther from '@/components/ElementOther';
 import ElementIndex from '@/components/ElementIndex';
 import Credits from '@/components/Credits';
+import styles from '@/styles/Table.module.css';
 
 export default function Table() {
     return (
-        <Box rows={'2'} columns={'1'} gap={'9'} style={{ zoom: '65%' }}>
+        <Box rows={'2'} columns={'1'} gap={'9'} style={{ zoom: '65%' }} className={styles.table}>
                 <Box rows={'7'} columns={'1'} gap={'1'}>
                     <Flex gap={'1'} id={'period-1'} style={{ width: '100%' }}>
                         <Element element_image={images[0]} props={elements[0]} />
