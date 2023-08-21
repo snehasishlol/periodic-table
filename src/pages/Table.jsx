@@ -181,6 +181,6 @@ export default function Table() {
                         <ElementHolder />
                     </Flex>
                 </Flex>
-        </Box>
+        </Flex>
     )
 }
