@@ -24,7 +24,7 @@ export default function Table() {
                         <ElementHolder />
                         <ElementHolder x={<ElementIndex />} />
                         <ElementHolder x={<Credits />} />
-                        {[1, 2, 3, 4, 5, 6, 7].map((i) => (<ElementHolderm key={i} />))}
+                        {[1, 2, 3, 4, 5, 6, 7].map((i) => (<ElementHolder key={i} />))}
                         <Element element_image={images[4]} props={elements[4]} />
                         <Element element_image={images[5]} props={elements[5]} />
                         <Element element_image={images[6]} props={elements[6]} />
