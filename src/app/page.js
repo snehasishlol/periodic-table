@@ -1,10 +1,10 @@
 import Table from "@/pages/Table";
-import { Flex } from "@radix-ui/themes";
+import { Box } from "@radix-ui/themes";
 
 export default function Home() {
 	return (
-		<Flex justify={'center'} align={'center'} style={{ padding: '1%' }}>
+		<Box style={{ padding: '1%', textAlign: 'center', margin: 'auto', justifyContent: 'center', alignItems: 'center' }}>
 			<Table />
-		</Flex>
+		</Box>
 	)
 }

@@ -20,7 +20,7 @@ export default function ElementIndex() {
                             <Text size={'3'}><Code>El</Code> represents the <strong>symbol</strong> of the element.</Text>
                             <Text size={'3'}><Code>Z</Code> represents the <strong>atomic number</strong> of the element.</Text>
                             <Text size={'3'}><Code>S</Code> represents the <strong>state at STP</strong> of the element.</Text>
-                            <Text size={'3'}><Code>A</Code> represents the s<strong>atomic mass</strong> of the element.</Text>
+                            <Text size={'3'}><Code>A</Code> represents the <strong>atomic mass</strong> of the element.</Text>
                         </Flex>
                     </Flex>
                     <Callout.Root>
