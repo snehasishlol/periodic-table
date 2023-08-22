@@ -1,14 +1,10 @@
 import Table from "@/pages/Table";
-import { Flex, Text } from "@radix-ui/themes";
-import { Kanit } from "next/font/google";
-import Image from "next/image";
-
-const kanit = Kanit({ subsets: ['latin'], weight: '400' });
+import { Box } from "@radix-ui/themes";
 
 export default function Home() {
 	return (
-		<>
+		<Box style={{ justifyContent: 'center', textAlign: 'center', alignContent: 'center', padding: '1%' }}>
 			<Table />
-		</>
+		</Box>
 	)
 }
