@@ -48,7 +48,7 @@ export const metadata = {
 	},
 	themeColor: '#83D8FF',
 	twitter: {
-		card: 'summary_large_image',
+		card: 'summary',
 		title: 'Interactive Periodic Table',
 		description: 'A simple, interactive and informative periodic table.',
 		siteId: '',
